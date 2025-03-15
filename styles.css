@@ -1,0 +1,287 @@
+/* Style général pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+/* Style pour les bandeaux */
+.bandeau {
+    padding: 2px 0;
+    text-align: center;
+    color: white;
+}
+
+.bandeau1 {
+    background-color: #8a39ac;
+    height: 0.5cm;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 0.5cm;
+}
+
+.bandeau1 h4 {
+    font-size: 12px;
+    margin: 0;
+    margin-right: 140px;
+}
+
+.bandeau2 {
+    background-color: #1f1f1f;
+    text-align: left;
+    padding-left: 20px;
+    margin-left: -20px;
+    margin-right: 0px;
+}
+
+.bandeau2 h1 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.bandeau3 {
+    background-color: #1f1f1f;
+    height: 0.5cm;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 195px;
+    margin-right: 140px;
+    margin-bottom: 10px;
+}
+
+.bandeau4 {
+    background-color: #8a39ac;
+    height: 0.5cm;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+header {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    vertical-align: middle;
+    margin-left: 140px;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Style pour la barre de navigation */
+nav {
+    background-color: #2c2c2c;
+    padding: 10px 0;
+    margin: 0;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+/* Style pour les listes du menu principal et des sous-menus */
+.menu, .sous-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style pour chaque élément de la liste du menu principal */
+.menu li {
+    position: relative;
+}
+
+.menu > li {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Style pour les liens du menu principal */
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #2c2c2c;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #8a39ac;
+}
+
+/* Style pour le sous-menu */
+.sous-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2c2c2c;
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+    z-index: 10; /* Assure que le sous-menu est au-dessus des autres éléments */
+}
+
+.menu li:hover > .sous-menu {
+    display: block;
+}
+
+.sous-menu li {
+    margin: 0;
+}
+
+.sous-menu a {
+    padding: 10px 20px;
+    background-color: #2c2c2c;
+    color: white;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+.sous-menu a:hover {
+    background-color: #8a39ac;
+}
+
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style pour le carrousel d'images */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+/* Style pour chaque diapositive */
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Style pour les légendes des diapositives */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Style pour le texte de numérotation des diapositives */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Style pour les boutons "Précédent" et "Suivant" */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Style pour les points de navigation du carrousel */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Style pour les sections du contenu */
+section {
+    margin: 20px 140px;
+}
+
+/* Style pour les articles */
+article {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Style pour les titres des articles */
+article h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+/* Style pour les paragraphes des articles */
+article p {
+    line-height: 1.6;
+}
+
+/* Style pour les liens dans les articles */
+article a {
+    color: #8a39ac;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Style pour le pied de page */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #8a39ac;
+    color: #fff;
+}
